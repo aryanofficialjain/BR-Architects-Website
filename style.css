@@ -1,0 +1,321 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	scroll-behavior: smooth;
+
+}
+
+/*some freuant used varable.*/
+
+:root{
+	--more-used-bg-color:black;
+	--hover-color:#ccc;
+
+
+}
+
+
+/*utility classes*/
+.space{
+	letter-spacing: 4px;
+}
+.flex{
+	display: flex;
+	align-items: center;
+}
+
+.container{
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+
+/*some default css*/
+
+a{
+	text-decoration: none;
+
+}
+
+p{
+	font-size:0.9rem;
+	
+}
+
+
+
+/*styleing the web page*/
+
+
+/*navigation bar*/
+
+nav{
+	justify-content: space-between;
+	padding: 0px 10px;
+	box-shadow: 0px 0px 8px black;
+	font-size: 1.1rem;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	background: white;
+/*	position: sticky;*/
+/*	top: 0;*/
+}
+
+#left-nav{
+/*	background: red;*/
+	
+}
+
+#left-nav a{
+	color: black;
+	padding: 10px 20px;
+	
+}
+
+.right-nav{
+	list-style-type: none;
+/*	background: red;*/
+	gap: 10px;
+
+}
+
+.right-nav li a{
+/*	background: yellow;*/
+	color:black;
+	padding: 10px 20px;
+	font-size: 1rem;
+}
+
+nav a:hover{
+	background: #ccc;
+}
+
+
+/*head bg section*/
+
+.header-bg{
+	min-height: 100vh;
+	justify-content: center;
+	background: url('img/asset 0.jpeg');
+	background-size: cover;
+	font-size: 3rem;
+	color:white;
+	text-shadow: 0px 0px 10px black;
+
+
+
+}
+
+
+/*project section*/
+
+.project{
+	padding: 50px 0px 0px 0px;
+}
+
+.project-container{
+	padding: 20px 0px;
+}
+
+.project-container h2{
+	margin: 5px 0px;
+	font-weight: lighter;
+	text-shadow: 0px 0px 1px grey;
+	font-size: 2rem;
+
+}
+
+.project-container hr{
+	margin: 20px 0px;
+	height: 1px;
+	background: grey;
+}
+
+
+.project-items{
+	justify-content: space-evenly;
+	gap: 10px;
+/*	flex-wrap: wrap;*/
+}
+
+
+.project-items-img{
+	height: 32vh;
+
+}
+
+.project-items-img h4{
+	display: inline-block;
+	color: white;
+	padding: 5px;
+	background: black;
+
+}
+
+.project-items-img:nth-child(1){
+	background: url('img/asset 1.jpeg') no-repeat center center/cover;
+	width: 30%;
+}
+
+.project-items-img:nth-child(2){
+	background: url('img/asset 2.jpeg') no-repeat center center/cover;
+	width: 30%;
+}
+.project-items-img:nth-child(3){
+	background: url('img/asset 3.jpeg') no-repeat center center/cover;
+	width: 30%;
+}
+
+.project-items-img:nth-child(4){
+	background: url('img/asset 4.jpeg') no-repeat center center/cover;
+	width: 30%;
+}
+
+
+/*about section*/
+
+.about{
+	padding: 30px 0px 0px 0px;
+}
+
+.about-container{
+	padding: 20px 0px;
+}
+
+
+.about-container h2{
+	margin: 5px 0px;
+	font-weight: lighter;
+	text-shadow: 0px 0px 1px grey;
+	font-size: 2rem;
+}
+
+.about-container hr{
+	margin: 20px 0px;
+	height: 1px;
+	background: grey;
+}
+
+.about-container p{
+	margin: 20px 0px;
+	padding: 20px 0px;
+
+}
+
+.about-card{
+	justify-content: space-evenly;
+	gap: 15px;
+}
+
+.about-card-items{
+	width: 25%;
+}
+
+.about-card-items img{
+	width: 100%;
+}
+
+.about-card-items h1{
+	font-size: 1.5rem;
+	padding-top: 5px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+}
+
+.about-card-items i{
+	color: grey;
+}
+
+.about-card-items p{
+	line-height: 25px;
+	margin-top: -5px;
+}
+
+.about-card-items a{
+	width: 100%;
+	display: block;
+	padding: 10px 0px;
+	text-align: center;
+	color:black;
+	background: var(--hover-color);
+	transition: all 0.5s ease-out;
+}
+
+.about-card-items a:hover{
+	background: grey;
+}
+
+
+/*contact section*/
+
+
+.contact{
+	padding: 30px 0px 0px 0px;
+}
+
+.contact-container{
+	padding: 20px 0px;
+}
+
+.contact-container h2{
+	margin: 5px 0px;
+	font-weight: lighter;
+	text-shadow: 0px 0px 1px grey;
+	font-size: 2rem;
+}
+
+.contact-container hr{
+	margin: 20px 0px;
+	height: 1px;
+	background: grey;
+}
+
+
+form{
+	margin: 30px 0px;
+	flex-direction: column;
+	gap: 10px;
+
+}
+
+form input{
+	width: 100%;
+	height: 40px;
+	font-size: 1rem;
+	padding: 10px;
+}
+
+.contact-container a{
+	padding: 12px 20px;
+	background: black;
+	color:white;
+	transition: all  0.5s ease-out;
+}
+
+.contact-container a:hover{
+	color:black;
+	background: var(--hover-color);
+}
+
+
+/*footer background*/
+.footer-bg{
+	margin: 40px 0px;
+	background-size: cover;
+	background-position: center;
+}
+
+.footer-bg img{
+	width: 100%;
+}
+
+
+footer{
+	text-align: center;
+	background: black;
+	padding: 12px 0px;
+	color:white;
+}
