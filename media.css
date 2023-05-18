@@ -1,0 +1,82 @@
+@media screen and (max-width:600px){
+
+	.right-nav{
+		position: absolute;
+		width: 100%;
+		top: 50px;
+		left: -100%;
+		padding: 12px;
+		justify-content: center;
+		text-align: center;
+		background: wheat;
+		transition: all 0.4s ease-out;
+/*		display: none;*/
+	}
+
+	.active{
+		left: 0;
+	}
+
+	#arc-text{
+		display: none;
+	}
+
+	#navmenu{
+		display: block;
+		font-size: 1.5rem;
+		margin-right: 10px;
+	}
+
+/*	project items*/
+	
+	.project-items{
+		flex-wrap: wrap;
+		gap: 20px;
+
+	}
+	.project-items-img{
+		min-width: 100%;
+		min-height: 55vh;
+	}
+
+/* about card*/
+	
+	.about-card{
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+
+	.about-card-items{
+		min-width: 90%;
+
+	}
+}
+
+
+@media screen and (max-width:900px){
+	/*	project items*/
+	
+	.project-items{
+		flex-wrap: wrap;
+		gap: 10px;
+
+	}
+	.project-items-img{
+		width: 48%;
+		height: 40vh;
+	}
+
+
+/*	about items*/
+	.about-card{
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.about-card-items{
+		width: 45%;
+
+	}
+
+
+}

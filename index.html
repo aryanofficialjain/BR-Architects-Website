@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
 	<title>BR Architects</title>
 </head>
 <body>
@@ -14,17 +15,18 @@
 		<div id="left-nav">
 			<a href="#" class="space"><b>BR</b>&nbspArchitects</a>
 		</div>
-		<ul class="right-nav flex space"> 
+		<ul class="right-nav flex space " id="right-nav"> 
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
+		<div id="navmenu"><i class="fa-sharp fa-solid fa-bars" style="color:black"></i></div>
 	</nav>
 
 
 	<!-- head bg section -->
 	<header class="flex header-bg space">
-		<span style="background: rgba(0, 0, 0, 0.7); padding: 5px; color: white; font-weight: bolder;">BR</span>&nbspArchitects
+		<span style="background: rgba(0, 0, 0, 0.7); padding: 5px; color: white; font-weight: bolder;">BR</span>&nbsp<span id="arc-text">Architects</span>
 	</header>
 
 	<!-- projects section -->
@@ -133,6 +135,15 @@
 
 	<footer>Made By Aryan Jain | All Rights Reserved</footer>
 
+<script src="https://kit.fontawesome.com/18d5e5a3ba.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	const button = document.getElementById('navmenu');
+	const navlinks = document.getElementById('right-nav');
 
+	button.addEventListener('click',() => {
+		navlinks.classList.toggle('active');
+	})
+	
+</script>
 </body>
 </html>

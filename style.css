@@ -89,6 +89,10 @@ nav{
 	font-size: 1rem;
 }
 
+#navmenu{
+	display: none;
+}
+
 nav a:hover{
 	background: #ccc;
 }
@@ -144,6 +148,7 @@ nav a:hover{
 
 .project-items-img{
 	height: 32vh;
+	width: 30%;
 
 }
 
@@ -157,21 +162,21 @@ nav a:hover{
 
 .project-items-img:nth-child(1){
 	background: url('img/asset 1.jpeg') no-repeat center center/cover;
-	width: 30%;
+	
 }
 
 .project-items-img:nth-child(2){
 	background: url('img/asset 2.jpeg') no-repeat center center/cover;
-	width: 30%;
+	
 }
 .project-items-img:nth-child(3){
 	background: url('img/asset 3.jpeg') no-repeat center center/cover;
-	width: 30%;
+	
 }
 
 .project-items-img:nth-child(4){
 	background: url('img/asset 4.jpeg') no-repeat center center/cover;
-	width: 30%;
+	
 }
 
 
@@ -201,7 +206,7 @@ nav a:hover{
 
 .about-container p{
 	margin: 20px 0px;
-	padding: 20px 0px;
+	padding: 5px 0px;
 
 }
 
